@@ -32,4 +32,6 @@ $W  Processes...:$W $G$PROCESS_ROOT$W (root), $G$PROCESS_USER$W (user), $G$PROCE
 
 $W  CPU.........: $W$PROCESSOR_NAME ($G$PROCESSOR_COUNT$W vCPU)
 $W  GPU.........: $W$GPU_NAME$W ($G$GPU_TEMP$W), VRAM: $G$GPU_MEM_USED$W / $G$GPU_MEM_TOTAL$W
-$W  Memory......: $G$USED$W used, $G$AVAIL$W avail, $G$TOTAL$W total$W"
+$W  Memory......: $G$USED$W used, $G$AVAIL$W avail, $G$TOTAL$W total$W
+
+$W  Weather.....: $G"Zurich"$W `curl -s 'wttr.in/Zurich?format=(%t)+%C+%c'`"
