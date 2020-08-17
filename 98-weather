@@ -1,4 +1,4 @@
 #!/bin/sh
 # Weather
-ansiweather -l Dubendorf
-echo
+LOCATION=`timedatectl | grep zone | cut -d '/' -f2 | cut -d ' ' -f1`
+ansiweather -l $LOCATION
