@@ -32,7 +32,7 @@ for line in "${dfs[@]}"; do
     # print dimmmed bar until end
     bar+="${white}${dim}"
     for ((i=$used_width; i<$bar_width; i++)); do
-        bar+="="
+        bar+="-"
     done
     bar+="${undim}]"
     # print usage line & bar
